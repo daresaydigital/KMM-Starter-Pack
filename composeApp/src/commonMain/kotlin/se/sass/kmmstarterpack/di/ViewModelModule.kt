@@ -8,10 +8,3 @@ val viewModelModule = module {
         FirstScreenViewModel(get())
     }
 }
-class MyService {
-
-}
-val androidModule = module {
-
-    single { MyService() }
-}
