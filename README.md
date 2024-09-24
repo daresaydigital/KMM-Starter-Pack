@@ -1,8 +1,8 @@
 This is a Kotlin Multiplatform project targeting Android, iOS.
 
 1. Add your ViewModel, Repo and API service into DI
-2. Be aware of ViewModels, it’s not LifeCycle Aware, so you must clear it yourself
-3. Every Dto must be extended (implemented) from Domain for casting
+2. Every Dto must be extended (implemented) from Domain for casting
+3. Instead of Compose Navigation and ViewModel we have Voyager Navigation and ScreenModel
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
