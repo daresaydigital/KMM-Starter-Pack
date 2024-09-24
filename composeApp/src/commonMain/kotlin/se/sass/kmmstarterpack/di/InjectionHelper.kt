@@ -3,12 +3,6 @@ package se.sass.kmmstarterpack.di
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.core.context.startKoin
-import org.koin.core.module.Module
-import se.sass.kmmstarterpack.presentation.ui.first.FirstScreenViewModel
-
-object InjectionHelper : KoinComponent {
-    val firstScreenViewModel: FirstScreenViewModel by inject()
-}
 
 
 fun initKoin(config: () -> Unit = {}) {
@@ -18,7 +12,7 @@ fun initKoin(config: () -> Unit = {}) {
             apiModule,
             networkModule,
             repositoryModule,
-            viewModelModule,
+            screenModelModule,
         )
     }
 }
